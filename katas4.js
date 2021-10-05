@@ -231,6 +231,10 @@ function bonus3() {
     let header = document.createElement("div");
     header.textContent = "bônus 3:";
     document.body.appendChild(header);
+    let arrayduplicata = [];
+    for(let i = 0; i < gotCitiesCSV.length; i++){
+        
+    }
 }
 
 function bonus4() {
@@ -239,11 +243,6 @@ function bonus4() {
     document.body.appendChild(header);
 }
 
-function bonus4() {
-    let header = document.createElement("div");
-    header.textContent = "bônus 4:";
-    document.body.appendChild(header);
-}
 
 function bonus5() {
     let header = document.createElement("div");
@@ -255,40 +254,55 @@ function bonus6() {
     let header = document.createElement("div");
     header.textContent = "bônus 6:";
     document.body.appendChild(header);
+    return lotrCitiesArray.includes("Mirkwood")
 }
+showResults(bonus6())
 
 function bonus7() {
     let header = document.createElement("div");
     header.textContent = "bônus 7:";
     document.body.appendChild(header);
+    return lotrCitiesArray.includes("Hollywood");
 }
+showResults(bonus7())
 
 function bonus8() {
     let header = document.createElement("div");
     header.textContent = "bônus 8:";
     document.body.appendChild(header);
+    return lotrCitiesArray.indexOf("Mirkwood")
 }
+showResults(bonus8())
 
 function bonus9() {
     let header = document.createElement("div");
     header.textContent = "bônus 9:";
     document.body.appendChild(header);
+    // /\s/g
+
 }
 
 function bonus10() {
     let header = document.createElement("div");
     header.textContent = "bônus 10:";
     document.body.appendChild(header);
+    return lotrCitiesArray.reverse();
 }
+showResults(bonus10())
 
 function bonus11() {
     let header = document.createElement("div");
     header.textContent = "bônus 11:";
     document.body.appendChild(header);
+    return lotrCitiesArray.sort();
 }
+showResults(bonus11())
 
 function bonus12() {
     let header = document.createElement("div");
     header.textContent = "bônus 12:";
     document.body.appendChild(header);
+    const ordenadoPorTamanho = lotrCitiesArray.sort((a,b) => a.length - b.length);
+    return ordenadoPorTamanho;
 }
+showResults(bonus12())
